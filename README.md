@@ -31,9 +31,9 @@ from SmartApi import SmartConnect #or from SmartApi.smartConnect import SmartCon
 import pyotp
 from logzero import logger
 
-api_key = 'Your Api Key'
-username = 'Your client code'
-pwd = 'Your pin'
+api_key = 'cMY3cAcZ'
+username = 'v.murali129@gmail.com'
+pwd = 'Murali123@&123'
 smartApi = SmartConnect(api_key)
 try:
     token = "Your QR value"
@@ -127,7 +127,7 @@ else:
         logger.exception(f"Historic Api failed: {e}")
     #logout
     try:
-        logout=smartApi.terminateSession('Your Client Id')
+        logout=smartApi.terminateSession('V93710')
         logger.info("Logout Successfull")
     except Exception as e:
         logger.exception(f"Logout failed: {e}")
